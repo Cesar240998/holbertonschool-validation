@@ -1,6 +1,6 @@
 #make file - Development Lifecycle with Makefile
 build:
-	@hugo
+	hugo
 clean:
 	@rm -rf dist/*
 post:
