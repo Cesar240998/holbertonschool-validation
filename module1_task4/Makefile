@@ -8,4 +8,5 @@ post:   ## Create a new blog post using enviroment variable
 	@sed -i 's/title:.*/title: $(POST_TITLE)/' content/posts/$(POST_NAME).md
 	@sed -i -r 's/draft:.*/draft:"false"/' content/posts/$(POST_NAME).md
 help:   ## command help
+	@echo "Usage: make <command>"
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
